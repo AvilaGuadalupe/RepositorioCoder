@@ -1,0 +1,9 @@
+.grid-nl {
+	display:grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto ;
+	iframe{
+		justify-self: center;
+		padding-bottom: 3.0rem;
+	}
+}

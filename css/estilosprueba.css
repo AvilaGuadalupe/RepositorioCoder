@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+header {
+	/*background color y color de letra header*/
+	background-color: #D5ECC2;
+	color: #b15a74;
+    width: 100%;
+}
+
+#logoPerro {
+    align-content: flex-start;
+    border: 1px solid black;
+}
+
+.nav {
+    /*barra de navegacion menú*/
+    background-color: #8bb669;
+}
+
+.nav .menu { /*flex box*/
+    font-size: 20px;
+    list-style: none;
+}
+
+.nav .menu li {
+    display: inline-block;
+}
+
+.nav a {
+    /*color de texto, decoration text, display menú*/
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+    font-size: 0;
+}
+
+.menu a:hover {
+    color: lightseagreen;
+}
+.submenu li {
+    /*submenu*/
+    width: 100%;
+    font-size: 18px;
+    background-color:#8bb669;
+}
+
+body{
+    font-family: 'Varela Round',
+    sans-serif;
+    background-color:rgb(213, 247, 237);
+    display: flex;
+    flex-direction:column;
+    }
+.gridPrincipal {
+    display: grid;
+    grid-template-areas: 'main main main''aside aside aside';
+}
+
+.gridPrincipal div {
+    background-color: #D5ECC2;
+    text-align: center;
+    color: #63298a;
+}
+.gridItem1{
+    justify-self: start;
+    background-color:#D5ECC2;
+	text-align: center;
+	color: #b15a74;
+}
+
+.gridItem2{
+    background-color: #D5ECC2;
+    justify-self: stretch;
+}
+.titulo2{
+    text-align: center;
+    display: flex;
+    display:inline-block;
+    background-color: #D5ECC2;
+    margin: 0;
+}
+
+/*main {
+	background-color: #DCEDC1;
+	color: #b15a74;
+	text-align: center;
+	display: flex;
+	flex: 1;
+}
+.padreMain {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+}*/
+
+.section1 {
+	margin: 1rem;
+	padding: 1rem;
+}
+
+p {
+	/*parrafo*/
+	line-height: 20px;
+	font-size: 20px;
+	padding: 1rem;
+    color: #b15a74;
+}
+
+.primerParrafo {
+	text-decoration: underline;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	color: #b15a74;
+	font-size: 18px;
+}
+
+
+.box {
+	border: 1px solid violet;
+	margin: 2px 2px 2px 2px;
+}
+
+
+h1 {
+	/* font style, weight, style, family. text align y brackground image de h1*/
+	text-align: center;
+	font-size: 70px;
+	font-weight: bold;
+	font-style: none;
+	font-family: 'Varela Round', sans-serif;
+	background-image: url("../media/images/fondo-perros.jpg");
+    width: 100%;
+    padding: 0;
+}
+
+h2 {
+	color: #fa81d6;
+    padding: 2rem;
+    width: 100%;
+}
+.productos{
+    display: grid;
+    align-items: center;
+    align-content:center;
+}
+
+.galeria {
+    margin: 2rem;
+    padding: 2rem;
+    display: grid;
+    background-color: #ecd7eb;
+    grid-template-columns: repeat(2fr, 1fr);
+    grid-template-rows: repeat(4fr, 1fr);
+    border: 1px solid violet;
+}
+
+.divBorder {
+    border: 1px solid violet;
+}
+
+.tamañoImagen {
+    width: 80%;
+    height: 60%;
+}
+@media only screen and (min-width: 320px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .divBorder {
+        border: 4px solid violet;
+        background-color: #ecd7eb;
+    }
+    .gridPrincipal{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .perritos{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px ) {
+    .gridPrincipal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .perritos {
+        width: 100%;
+    }
+}
+@media only screen and (min-width:1024px){
+    .gridPrincipal {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+        .perritos{
+        width: 500px;
+    }
+}
+
+.gridItem4{
+	background-color: #FFD3B6;
+	color: #b15a74;
+	font-family: 'Varela Round'sans-serif;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: center;
+}
+
+.vacunacionPerros {
+	/* vacunacion perros y gatos*/
+	text-align: center;
+	font-size: 25px;
+	color: #63298a;
+	text-transform: capitalize;
+	text-decoration: underline;
+	background-color: #b15a74;
+	background-repeat: inherit;
+	background-size: contain;
+    margin: 0;
+}
+table {
+	/*color de fondo, de letra y list style vacunacion gatos y perros*/
+	color: rgb(174, 107, 180);
+	background-color: #ecd7eb;
+	list-style: georgian;
+	border: 1px solid violet;
+}
+ul {
+	list-style: circle;
+	list-style-position: inherit;
+    color: rgb(174, 107, 180);
+}
+th {
+	text-transform: uppercase;
+    color: rgb(174, 107, 180);
+}
+td{
+    color: rgb(174, 107, 180);
+}
+
+footer {
+	/* text align, background color, color de letra y font family */
+	text-align: right;
+	background-color: #FFAAA5;
+	color: #b15a74;
+	font-family: 'Varela Round'sans-serif;
+	flex: 1;
+	flex-direction: column;
+    background-image: linear-gradient(to top, #b15a74, #e5a2b7);
+}
+
+.terminos a:hover {
+	color: lightseagreen;
+}
+
+.redesSociales a:hover {
+	color: lightseagreen;
+}
+
+.redesSociales a {
+	color: #a84462;
+}
+

@@ -1,0 +1,331 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Varela Round", sans-serif;
+  background-color: #DCEDC1;
+  color: #284242;
+}
+
+h2 {
+  width: 100%;
+  padding-bottom: 3.0rem;
+  padding-top: 3.0rem;
+  font-size: 3.0rem;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p, blockquote, table {
+  line-height: 2.0rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.header {
+  /*background color y color de letra header*/
+  background-color: #b3e789;
+  color: #b15a74;
+  width: 100%;
+  padding: 0;
+}
+
+.header .header__logo {
+  align-content: flex-end;
+  border: 1px solid black;
+  width: 70px;
+  height: 70px;
+}
+
+.header .header__nav {
+  /*barra de navegacion menú*/
+  background-color: #8bb669;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  font-size: 2.1rem;
+}
+
+.header .header__nav .nav-item a {
+  color: #284242;
+  font-size: 2.1rem;
+  font-family: "Varela Round", sans-serif;
+  padding-left: 2.0rem;
+  text-decoration: none;
+}
+
+.header .header__nav .dropdown-menu {
+  list-style: none;
+}
+
+.header .header__nav .dropdown-item {
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: #8bb669;
+}
+
+.header .header__nav .nav-item a:hover {
+  color: #2aafa8;
+  animation: flash;
+  animation-duration: 1s;
+}
+
+.header .header__nav .nav-search {
+  font-size: 2.1rem;
+  width: 100%;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 7.0rem;
+  font-weight: bold;
+  font-style: none;
+  background-image: url("../media/images/fondo-perros.jpg");
+  width: 100%;
+  font-family: "Varela Round", sans-serif;
+  padding-bottom: 0;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  justify-content: center;
+}
+
+.main-grid div {
+  padding: 1rem;
+  display: grid;
+}
+
+.main-grid div .main__perritos {
+  padding: 1rem;
+  justify-self: center;
+}
+
+.qs-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+.qs-grid section {
+  padding: 1rem;
+  display: grid;
+}
+
+.qs-grid section .qs__gato-blanco {
+  padding: 1rem;
+  justify-self: center;
+}
+
+.grid-comprar {
+  text-align: center;
+  display: grid;
+  background-color: #DCEDC1;
+}
+
+.grid-comprar .galeria {
+  display: grid;
+  background-color: #b7f1b7;
+  border: 1px solid #104b28;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto auto auto;
+}
+
+.grid-comprar .galeria .divBorder {
+  border: 1px solid #13311c;
+}
+
+.grid-comprar .galeria .tamañoImagen {
+  width: 100%;
+  height: 70%;
+  padding-bottom: 2.5rem;
+}
+
+.grid-comprar .galeria button {
+  background-color: #32a832;
+  width: 50%;
+  height: auto;
+}
+
+.grid-comprar .galeria button a {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+
+.grid-productos .figure {
+  display: grid;
+  justify-self: center;
+}
+
+.grid-productos .figure .figure-caption {
+  font-size: 2.0rem;
+  color: #284242;
+  text-align: center;
+  text-shadow: 0 1px;
+  border-radius: 1;
+  border: 1px solid green;
+  background-color: #459e45;
+}
+
+.grid-productos .figure .figure-img {
+  justify-self: center;
+}
+
+.grid-productos .figure:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.grid-nl {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+
+.grid-nl iframe {
+  justify-self: center;
+  padding-bottom: 3.0rem;
+}
+
+.grid-contacto {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  text-align: center;
+}
+
+.grid-contacto div .form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-contacto div .form input,
+.grid-contacto div .form label {
+  font-size: 1.8rem;
+}
+
+.grid__blog {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  text-align: center;
+  width: 100%;
+}
+
+.grid__blog ol {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.grid__blog div video {
+  justify-content: center;
+  width: 80%;
+}
+
+.grid__blog div table {
+  color: #1e4d1e;
+  background-color: #8ccf72;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.vacunacionPerros {
+  /* vacunacion perros y gatos*/
+  text-align: center;
+  color: #043112;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin: 0;
+  font-size: 2.1rem;
+  background-color: #5a9c3f;
+}
+
+/*media index*/
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .main__perritos {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .qs__gato-blanco {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .grid-comprar .galeria button {
+    width: 100%;
+  }
+  .grid-comprar .galeria button a {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .grid-nl iframe {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  div .table {
+    font-size: 1.3rem;
+  }
+}
+
+.footer {
+  text-align: right;
+  background-color: #b3e789;
+  font-family: 'Varela Round'sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  padding-right: 1.5rem;
+}
+
+.footer .footer__terminos a:hover {
+  color: #2aafa8;
+}
+
+.footer .footer__nav a:hover {
+  color: #2aafa8;
+}
+
+.footer .footer__nav-redesSociales {
+  color: #284242;
+}
+
+.footer .footer__nav-redesSociales li {
+  list-style: circle;
+  list-style-position: inherit;
+  color: green;
+}
+/*# sourceMappingURL=styles.css.map */

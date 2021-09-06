@@ -140,10 +140,11 @@ p, blockquote, table {
 
 .grid-comprar .galeria {
   display: grid;
+  margin: 2.5rem;
   background-color: #b7f1b7;
   border: 5px solid #104b28;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 33% 33% 33%;
 }
 
 .grid-comprar .galeria .divBorder {
@@ -151,8 +152,9 @@ p, blockquote, table {
 }
 
 .grid-comprar .galeria .tamañoImagen {
-  width: 80%;
+  width: 50%;
   height: 70%;
+  padding-top: 4.0rem;
   padding-bottom: 2.5rem;
 }
 

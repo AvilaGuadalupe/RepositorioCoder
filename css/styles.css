@@ -176,6 +176,7 @@ p, blockquote, table {
 .grid-productos .figure {
   display: grid;
   justify-self: center;
+  width: 20%;
 }
 
 .grid-productos .figure .figure-caption {

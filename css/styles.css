@@ -141,17 +141,17 @@ p, blockquote, table {
 .grid-comprar .galeria {
   display: grid;
   background-color: #b7f1b7;
-  border: 1px solid #104b28;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: auto auto auto auto;
+  border: 5px solid #104b28;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto auto;
 }
 
 .grid-comprar .galeria .divBorder {
-  border: 1px solid #13311c;
+  border: 1.5rem solid #8bb669;
 }
 
 .grid-comprar .galeria .tamañoImagen {
-  width: 100%;
+  width: 70%;
   height: 70%;
   padding-bottom: 2.5rem;
 }

@@ -256,6 +256,10 @@ p, blockquote, table {
   margin: 0;
 }
 
+.grid__blog div table ul {
+  list-style: none;
+}
+
 .vacunacionPerros {
   /* vacunacion perros y gatos*/
   text-align: center;

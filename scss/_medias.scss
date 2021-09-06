@@ -1,5 +1,8 @@
 /*media index*/
 @media only screen and (min-width: 320px) and (max-width:768px) {
+	.header h1{
+		font: size 0.5rem;
+	}
     .main__perritos{
 		width: 100%;
 	}

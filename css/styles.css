@@ -38,13 +38,12 @@ p, blockquote, table {
 .header {
   /*background color y color de letra header*/
   background-color: #b3e789;
-  color: #b15a74;
+  color: #3b6e12;
   width: 100%;
   padding: 0;
 }
 
 .header .header__logo {
-  align-content: flex-end;
   border: 1px solid black;
   width: 70px;
   height: 70px;
@@ -56,7 +55,7 @@ p, blockquote, table {
   display: flex;
   list-style: none;
   text-decoration: none;
-  font-size: 2.1rem;
+  font-size: 2.0rem;
 }
 
 .header .header__nav .nav-item a {
@@ -90,7 +89,7 @@ p, blockquote, table {
 
 .header h1 {
   text-align: center;
-  font-size: 7.0rem;
+  font-size: 5.0rem;
   font-weight: bold;
   font-style: none;
   background-image: url("../media/images/fondo-perros.jpg");
@@ -269,6 +268,9 @@ p, blockquote, table {
 
 /*media index*/
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .header h1 {
+    font: size 0.5rem;
+  }
   .main__perritos {
     width: 100%;
   }

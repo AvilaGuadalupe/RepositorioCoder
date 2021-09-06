@@ -1,11 +1,10 @@
 .header {
 	/*background color y color de letra header*/
 	background-color: $colorBgHd;
-	color: #b15a74;
+	color: $verdeh1;
 	width: 100%;
 	padding: 0;
 	.header__logo {
-		align-content: flex-end;
 		border: 1px solid black;
 		width: 70px;
 		height: 70px;
@@ -16,7 +15,7 @@
 		display: flex;
 		list-style: none;
 		text-decoration: none;
-		font-size: 2.1rem;
+		font-size: 2.0rem;
 		.nav-item a{
 		color: $verdeOscuro;
 		font-size: 2.1rem;
@@ -44,7 +43,7 @@
 	}
 	h1 {
 		text-align: center;
-		font-size: 7.0rem;
+		font-size: 5.0rem;
 		font-weight: bold;
 		font-style: none;
 		background-image: url("../media/images/fondo-perros.jpg");
